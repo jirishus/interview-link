@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8"> 
+ <title>Interview Link</title>     
+ <!-- Mobile-friendly viewport -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Style sheet link -->
+ <link href="stylesheets/screen.css" rel="stylesheet" media="all">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
+</head>
+<body>
+
+ <div class="container">
+
+  <header>
+   <div class="row">
+    <div class="col-sm-6">
+     <h1>
+      <a href="#">
+        <i class="fa fa-external-link"></i> Interview Link
+      </a>
+     </h1>
+    </div>
+    <div class="col-sm-6 align-right">     
+
+     <ul class="list-inline">
+      <li><a href="#">learn more</a></li>
+      </li><a href="#">signin</a></li>
+     </ul>
+
+    </div>
+   </div>
+  </header>
+
+ <section class="hero">
+  <div class="row">
+   <div class="col-md-12">
+      <h2>Send Impactful Interview Prep</h2>
+      <p>A power tool for recruiters to send the right interviews for the right company</p>
+   </div>
+  </div>
+ </section>
+
+ <form name="candidateForm">
+  <fieldset>
+    <legend>Candidate Form</legend>
+
+    <p class="form-section">
+      <label for="email">Email</label>
+      <input type="email" id="" placeholder="interviewcandidate@gmail.com" required>
+    </p>
+
+    <p class="form-section">
+      <label for="company">Company</label>
+      <input type="text" id="" placeholder="dropbox, google, apple..." required>
+    </p>
+
+    <p class="form-section">
+      <label for="position">Position</label>
+      <input type="text" id="" placeholder="front-end, back-end, data..." required>
+    </p>
+
+    <p class="form-section">
+      <input type="submit" value="Send Email" />
+    </p>
+
+  </fieldset>
+   
+ </form>
+
+</div><!-- container -->
+
+
+<script>
+  var candidateForm = document.forms['candidateForm'];
+  candidateForm.onsubmit = handleCandidateForm;
+
+  function handleCandidateForm(evt) {
+    evt.preventDefault();
+    console.log('candidate form');
+  }
+  // var searchBtn = document.getElementById('search-btn');
+  // var resultsArea = document.getElementById('results-area');
+  // resultsArea.style.display = 'none';
+
+
+  // searchBtn.onclick = function(evt) {
+    
+  //   console.log('form submit');
+
+  //   var searchCriteria = document.getElementById('search-criteria').value;    
+  //   var resultSlot = document.getElementById('result-slot');
+
+  //   evt.preventDefault();
+
+  //   // show results
+  //   resultsArea.style.display = 'block';
+
+  //   // populate dom
+  //   resultSlot.innerHTML = 'search for : ' + searchCriteria;
+
+  //   // clear input
+  //   var searchForm = document.getElementById('search-form');
+  //   searchForm.reset();
+
+  //   console.log('search complete');
+
+  // }
+</script>
+
+</body>
+</html>
